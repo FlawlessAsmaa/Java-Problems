@@ -20,8 +20,7 @@ public class Triple {
         a = s.nextInt();
         System.out.println("Please enter the second number = ");
         b = s.nextInt();
-        int result = (2*a) + (3*b);
-        System.out.println("result of adding double of the first number and triple of the second number = " + result);
+        System.out.println("result of adding double of the first number and triple of the second number = " + (2*a+3*b));
     }
     }
     
