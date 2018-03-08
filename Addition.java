@@ -22,11 +22,9 @@ public class Addition {
          b = s.nextInt();
           System.out.println("Enter the third Number Please = ");
           c = s.nextInt();
-          
-          int add = a + b + c;
-          int mult = a * b * c;
-           System.out.println("addition result =   " + add);
-            System.out.println("Multiplication result =   " + mult);
+      
+           System.out.println("addition result =   " + (a+b+c));
+           System.out.println("Multiplication result =   " + (a*b*c));
     }
     
 }
