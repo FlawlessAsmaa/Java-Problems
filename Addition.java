@@ -9,7 +9,9 @@ import java.util.Scanner;
 public class Addition {
 
     /**
-     * @param args the command line arguments
+     Write a program that asks the user to input 3 different numbers.
+     Your program should calculate the addition and multiplication of the 3 numbers.
+     Then output the results each in separate line.
      */
     public static void main(String[] args) {
         int a, b, c;
