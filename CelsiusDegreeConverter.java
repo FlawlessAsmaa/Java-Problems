@@ -8,12 +8,12 @@ public class CelsiusDegreeConverter {
 
 
     public static void main(String[] args) {
-      float cel, far;
+      float celDegree, fehDegree;
       Scanner s=new Scanner(System.in);
-      System.out.println("Enter temp. in Celsius :");
-      cel=s.nextInt();
-      far = cel * 9/5 + 32;
-      System.out.println("Temp. in Fahrenheit: "+far);
+      System.out.println("Enter temperature in Celsius :");
+      celDegree=s.nextInt();
+      fehDegree = celDegree * 9/5 + 32;
+      System.out.println("Temp. in Fahrenheit: "+fehDegree);
 
     }
     
