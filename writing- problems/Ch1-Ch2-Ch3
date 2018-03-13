@@ -1,0 +1,81 @@
+Problem Solving Chapter 1 
+1- statement is a line of code which can be executed,  a comment is a line or paragraph or documentation which will be ignored, but we use it to illustrate or give hunts of our codes.
+
+2- a program is portable means that it works on any type of operating systems for example with no errors, can be work on any device.
+
+3- In common English compile means to collect information from different places and arrange it .
+
+4- it means that it can be run,  works correctly, and very functional.
+___________________________________________________________
+1-2:
+1- System.out.println(“Hello World”);
+2- System.out.println(“How are you?”)
+3- // this is a line comment
+/* this is a paragraph comment */
+/** this is a documentation comment */
+
+______________________________________________________________
+
+
+Problem Solving Chapter 2
+
+2- String day = ‘Tuesday’,
+month = ‘March’;
+Int date = 12,
+ Year = 2018;
+Day and month are Strings, date and year are integer.
+
+3- System.out.println(day);
+System.out.println(month);
+System.out.println(date);
+System.out.println(year);
+
+4- format 
+System.out.println(“Date : “ + day + “,  ” + month + “ ” + date + “, “ +year + “.”);
+
+5- System.out.println(“Date : “ + day + “ ” + date + “ ” + month + “ ”  + year );
+
+6- int hours, minute, second;
+Hours = 23
+System.out.println (“number of seconds is : “ + (hours - 00)* 60);
+7- float percentage= (hours/24)*100 ;
+System.out.println(“Percentage of the day = ) +percentage + “%”);
+
+
+______________________________________________________________
+
+Problem Solving Chapter 3
+1- it will print the integer number.
+It will display the double value.
+
+2-     float cel, far;
+      Scanner s=new Scanner(System.in);
+      System.out.println("Enter temp. in Celsius :");
+      cel=s.nextInt();
+      far = cel * 9/5 + 32;
+      System.out.println("Temp. in Fahrenheit: "+far);
+
+
+
+3-  int seconds = 5000;
+       int miniutesInSeconds = seconds /60;
+       int hoursInSeconds = seconds / 3600;
+       int secondsInSeconds = seconds%60;
+       int minutes = miniutesInSeconds%60;
+
+       System.out.println("number of hours = "+hoursInSeconds + ", number of min =  "+ minutes + " seconds = " +secondsInSeconds);
+
+4-   Random random = new Random();
+        int number = random.nextInt(100) + 1;
+        System.out.println(number);
+         System.out.println("Guess the number");
+         Scanner s = new Scanner(System.in);
+        int gussed = s.nextInt();
+         if (gussed == number)
+         {
+              System.out.println("You got it right");
+         }else
+         {
+              System.out.println("you failed you guessed = " + gussed+ “and my number was = “ +number);
+}
+
