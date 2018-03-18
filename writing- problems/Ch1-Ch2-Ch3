@@ -45,8 +45,9 @@ System.out.println(“Percentage of the day = ) +percentage + “%”);
 ______________________________________________________________
 
 Problem Solving Chapter 3
-1- it will print the integer number.
-It will display the double value.
+1- it will print the float number.
+It will display the integer value.
+
 
 2-     float cel, far;
       Scanner s=new Scanner(System.in);
