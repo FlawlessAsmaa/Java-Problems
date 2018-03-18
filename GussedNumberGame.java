@@ -3,13 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package gussednubergame;
+package gussednumbergame;
 
 import java.util.Random;
 import java.util.Scanner;
 
 
-public class GussedNuberGame {
+public class GussedNumberGame {
 
     
     public static void main(String[] args) {
