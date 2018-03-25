@@ -1,0 +1,145 @@
+Problem Solving Chapter 5
+1- if (x > 0 && x < 10) {
+             System.out.println("positive single digit number.");
+         }
+
+2-  the output will be 
+Just for
+Any not more
+it‘s breakfast!
+
+3- 
+
+
+
+
+
+4- public class HelloWorld{
+
+     public static void main(String []args){
+        checkFermat(4,5,6,1);
+        checkFermat(4,5,6,3);
+     }
+    
+    
+    public static void checkFermat(double a, double b, double c, int n) {
+        if (n > 2 && (Math.pow(a,n) + Math.pow(b,n) == Math.pow(c,n))){
+            System.out.println("Holy smokes, Fermat was wrong!");
+        }else {
+            System.out.println("No, that doesn't work.");
+        }
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+5- public class HelloWorld{
+
+     public static void main(String []args){
+         beer_song();
+     }
+    
+    
+    public static void beer_song() {
+        for (int i = 99; i >=0; i--)
+        if (i != 0 && i != 1) 
+        System.out.println(i + " bottles of beer on the wall, \n" + i + " bottles of beer, \n" + "ya' take one down, ya' pass it around,\n"+ (i-1)+ " bottles of beer on the wall. \n ");
+        else if (i == 1){
+            System.out.println(i + " bottle of beer on the wall, \n" + i + " bottle of beer, \n" + "ya' take one down, ya' pass it around,\n"+  "No bottles of beer on the wall. \n ");
+        }
+        else if (i == 0 ){
+        System.out.println("No bottles of beer on the wall,\nno bottles of bee,\nya can't take one down,\nya can't pass it around,\n'cause there are no more bottles of beer on the wall!");
+    }
+    } 
+        
+
+}
+
+
+
+6 -
+first thing to be executed is : else {
+System.out.println("ik");
+baffle(quince);
+System.out.println("boo-wa-ha-ha");
+}
+}
+
+
+
+ Second thing to be executed is : System.out.println(blimp);
+
+Value of blimp is rattle
+The output of this program is : 
+           ik
+           rattle
+           ping zoop
+           boo-wa-ha-ha
+
+
+___________________________________________________________
+7- public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        Random random = new Random();
+        int number = random.nextInt(100) + 1;
+        System.out.println("my number  is = " +number);
+        int guessed = s.nextInt();
+        boolean win = false;
+        while (win == false){
+            System.out.println("Guess the number to see if it like what i guess or not");
+            guessed = s.nextInt();
+            if (guessed == number){
+            win = true; 
+            } else if (guessed > number){
+                System.out.println("Your number is bigger !, try another guess !");
+            } else if (guessed < number){
+                System.out.println("Your number is Lower !, try another guess !");
+            }
+        }
+        System.out.println("Holy Moly, you got it right !!");
+}
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+Problem Solving Chapter 7
+
+1- 
+Value of n
+Value of i
+10
+5
+6
+3
+4
+2
+
+
+2- 10
+5
+6
+3
+4
+2
+
+
+3- 
+______________________________________
+1 - 
