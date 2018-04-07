@@ -1,8 +1,8 @@
 
-package americanformat;
+package dateformat;
 
 
-public class AmericanFormat {
+public class DateFormat {
 
 
     public static void main(String[] args) {
