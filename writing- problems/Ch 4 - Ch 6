@@ -1,0 +1,52 @@
+Problem Solving Chapter 4
+
+4.1
+1 -
+ No, I wug.
+You wugga wug.
+I wug.
+
+3 - it will cause an infinite print that the processor won’t end executing anything other than those two methods, ‘cause they both end with each other invoking.
+______________________________________________________________
+
+4.2 
+1 - 
+public static void zool (int first, String second, String third) {
+}
+
+2 - 
+ public static void main(String []args){
+       zool (11, 'Kuro', '221B Baker Street');
+}
+_______________________________________________________________
+
+4.3
+
+
+package dateformat;
+
+
+public class dateFormat {
+
+
+    public static void main(String[] args) {
+        
+          printAmerican("Sat", "April", 7, 2018);
+          printEuropean("Fri", "Dec", 21, 1991);
+          
+    }
+    
+    
+     public static void printAmerican (String day, String month, int date, int year) {
+        System.out.println(day + ", " + month + " " + date + ", " + year);
+        
+    }
+     
+     public static void printEuropean(String day, String month, int date, int year) {
+         System.out.println(day + ' ' + date + ' ' + month + ", " + year);
+     }
+}
+
+
+
+
