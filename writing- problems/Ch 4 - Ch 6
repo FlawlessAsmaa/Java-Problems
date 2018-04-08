@@ -1,4 +1,4 @@
-Problem Solving Chapter 4
+                                                Problem Solving Chapter 4
 
 4.1
 1 -
@@ -50,3 +50,154 @@ public class dateFormat {
 
 
 
+____________________________________________________________________________________________________________
+
+                                             Problem Solving Chapter 6
+
+6.1 :
+
+1 - nothing will happen, the method will do its job and nothing further.
+2 - it will cause an error.
+____________________________________
+6.2 :
+    public static void main(String[] args) {
+        System.out.println(isDivisable(25,5));
+        System.out.println(isDivisable(15,2));
+    }
+    
+    public static boolean isDivisable(int n, int m) {
+         boolean result = false;
+         if (n % m == 0){
+             result = true;
+         }
+         else {
+             result = false;
+         }
+         return result;
+     }
+    ________________________________________________
+6.3 :
+
+public static void main(String[] args) {
+        System.out.println(isTriangle(1,1,12));
+        System.out.println(isTriangle(9,5,12));
+    }
+    public static boolean isTriangle(int stick1, int stick2, int stick3) {
+        boolean result = false;
+        if (stick1 + stick2 <stick3 || stick2 + stick3 < stick1 || stick1 + stick3 < stick2) {
+            return result;
+        }
+        else {
+            result = true;
+        }
+        return result;
+}
+__________________________________________________________
+6.4 :
+
+public static void main(String[] args) {
+        System.out.println(multiAdd(1.0,2.0,3.0));
+        
+        System.out.println("==================");
+        
+        double num1 = Math.cos(Math.PI/4);
+        double num2 = 1.0/2.0;
+        double num3 = Math.sin(Math.PI/4);
+        System.out.println(multiAdd(num1, num2, num3));
+        
+        System.out.println("==================");
+        
+        double num4 = 1.0;
+        double num5 = Math.log(10);
+        double num6 = Math.log(20);
+        System.out.println(multiAdd(num4, num5, num6));
+        
+        System.out.println("==================");
+        
+        
+    }
+    
+    public static double multiAdd(double num1, double num2, double num3) {
+        return num1 * num2 + num3; 
+    }
+    
+    public static void expSum (double x) {
+        double num1 = x;
+        double num2 = Math.exp(-x);
+        double num3 = Math.sqrt(1.0 - num2);
+        
+        multiAdd(num1, num2, num3);
+    }
+_________________________________________________________
+6.5 :
+1 -
+true
+true
+ping!
+Pong!
+6.6 :
+
+1 - Result = 4 x 3 x 2 = 24;
+
+2 - prod method : it takes 2 inputs and if they are equal it prints n and if not it execute the else statement which is repeat the prod method until it returns the result value.
+
+3 - public static int prod2(int m, int n) {
+        if (m == n) {
+            return n;
+            
+        } else {
+            return n * prod(m, n - 1);
+            
+        }
+
+_________________________________________
+6.7 :
+
+public static void main(String[] args) {
+       Scanner s = new Scanner(System.in);
+        System.out.println("Enter your positive  odd number plz ! ");
+        int number = s.nextInt();
+        int result = oddSum (number);
+        System.out.println("The sum of the odd number is =  " + result);
+    }
+    public static int oddSum(int number) {
+        int sum =0;
+        for (int i =number; i > 0;i-- )
+        {
+            if (i % 2 != 0) {
+                sum = sum + i;
+            }
+        }
+        return sum;
+    }
+
+________________________________________________
+
+
+
+6.8 :
+
+public class AckermanFunction {
+
+    public static void main(String[] args) {
+        System.out.println("A(0, 0) = " + ack(0, 0));
+        System.out.println("A(0, 1) = " + ack(0, 1));
+        System.out.println("A(1, 0) = " + ack(1, 0));
+        System.out.println("A(1, 1) = " + ack(1, 1));
+        System.out.println("A(2, 1) = " + ack(2, 1));
+        System.out.println("A(2, 2) = " + ack(2, 2));
+        System.out.println("A(3, 0) = " + ack(3, 0));
+        System.out.println("A(3, 1) = " + ack(3, 1));
+        System.out.println("A(3, 2) = " + ack(3, 2));
+    }
+
+    public static int ack(int m, int n) {
+        if (m == 0) {
+            return n + 1;
+        } else if (m > 0 && n == 0) {
+            return ack(m - 1, 1);
+        } else if (m > 0 && n > 0) {
+            return ack(m - 1, ack(m, n - 1));
+        }
+        return 0;
+    }
